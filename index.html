@@ -24,10 +24,26 @@
         min-width: 54px;
         text-align: center;
     }
-    .searchbar{
-        margin: 11px, 4px;
+    #searchbar{
+            display: flex;
+            /* margin: 11px, 4px; */
+            width: 100%;
+            height:min-content%;
+            text-align: center;
+            padding: 1em;
+        }
+    .img-container{
+        display: flex;
+        width: 100%;
+        height: min-content;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;*/
     }
-    #container{
+    #foot-container{
         display: flex;
         background-color: rgb(218, 220, 224);
         height:auto;
@@ -96,17 +112,20 @@
 
 </style>
 <body>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+    <div class="img-container">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+    </div>
 
-    <form action="#">
-        <input class="searchbar" type="text">
-        <br>
+    <form class="img-container" action="#">
+        <div class="searchbar">
+            <input type="text" size="67">
+        </div>
             <button type="submit">Buscar con Google</button>
             <button type="submit">Me siento con suerte</button>
       </form>
 
-    <p>Ofrecido por Google en: <a href="#">Español</a></p>
-    <div id="container">
+    <p class="img-container">Ofrecido por Google en: <a href="#">Español</a></p>
+    <div id="foot-container">
         <div id="mexico">México</div>
         <div id="sobre-google">Sobre Google</div>
         <div id="publicida">Publicidad</div>
@@ -115,11 +134,6 @@
         <div id="privacidad">Privacidad</div>
         <div id="condiciones">Condiciones</div>
         <div id="preferencias">Preferencias</div>
-
-        
-
-
-
     </div>
 </body>
 </html>
