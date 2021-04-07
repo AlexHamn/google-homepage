@@ -11,7 +11,7 @@
         color: rgb(60, 64, 67);
         font-family: Arial, Helvetica, sans-serif;
     }
-    .buton{
+    [type='submit']{
         background-color: #f8f9fa;
         border: 1px solid #f8f9fa;
         border-radius: 4px;
@@ -24,17 +24,102 @@
         min-width: 54px;
         text-align: center;
     }
+    .searchbar{
+        margin: 11px, 4px;
+    }
+    #container{
+        display: flex;
+        background-color: rgb(218, 220, 224);
+        height: 100px;
+        flex-wrap: wrap;
+        font-size: 15px;
+        width: 100%;
+        align-content: flex-start;
+        position: absolute;
+        bottom: 0px;
+        /*  
+        justify-content: space-evenly;
+        */
+        
+        }
+        #mexico{
+            width: 100%;
+            height: min-content;
+            text-align: start;
+            padding: 1em;
+
+        }
+        #sobre-google{
+            width: min-content;
+            height:min-content%;
+            text-align: center;
+            white-space: nowrap;
+            padding: 1em;
+        }
+        #publicida{
+            width: min-content;
+            height:min-content%;
+            text-align: center;
+            padding: 1em;
+        }
+        #negocios{
+            width: min-content;
+            height:min-content%;
+            text-align: center;
+            padding: 1em;
+        }
+        #funcionalidad-busqueda{
+            width: min-content;
+            height:min-content%;
+            text-align: center;
+            white-space: nowrap;
+            padding: 1em;
+        }
+        #privacidad{
+            width: min-content;
+            height:min-content%;
+            text-align: center;
+            padding: 1em;
+        }
+        #condiciones{
+            width: min-content;
+            height:min-content%;
+            text-align: center;
+            padding: 1em;
+        }
+        #preferencias{
+            width: min-content;
+            height:min-content%;
+            text-align: center;
+            padding: 1em;
+        }
+
 </style>
 <body>
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
 
     <form action="#">
-        <input type="text">
+        <input class="searchbar" type="text">
         <br>
-            <button class="buton" type="submit">Buscar con Google</button>
-            <button class="buton" type="submit">Me siento con suerte</button>
+            <button type="submit">Buscar con Google</button>
+            <button type="submit">Me siento con suerte</button>
       </form>
 
     <p>Ofrecido por Google en: <a href="#">Español</a></p>
+    <div id="container">
+        <div id="mexico">México</div>
+        <div id="sobre-google">Sobre Google</div>
+        <div id="publicida">Publicidad</div>
+        <div id="negocios">Negocios</div>
+        <div id="funcionalidad-busqueda">Cómo funciona la Búsqueda</div>
+        <div id="privacidad">Privacidad</div>
+        <div id="condiciones">Condiciones</div>
+        <div id="preferencias">Preferencias</div>
+
+        
+
+
+
+    </div>
 </body>
 </html>
