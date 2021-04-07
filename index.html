@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,6 +46,44 @@
         margin-left: auto;
         margin-right: auto;
         width: 50%;*/
+    }
+    #heading-container{
+        display: flex;
+        width: 98%;
+        justify-content:flex-end;
+        align-content:center;
+        position:fixed;
+        top: 0px;
+    }
+    #gmail{
+        width: min-content;
+        height: min-content;
+        text-align: center;
+        padding: 1em;
+    }
+    #imagenes{
+        width: min-content;
+        height: min-content;
+        text-align: center;
+        padding: 1em;
+    }
+    #menu{
+        width: min-content;
+        height: min-content;
+        text-align: center;
+        padding: 1em;
+    }
+    #profile{
+        width: 1em;
+        height: 1em;
+        padding: 1em;
+        text-align: center;
+        color: white;
+        background-color: rgb(120,144,156);
+        border-style:none;
+        border-radius: 50%;
+        align-self: center;
+
     }
     #foot-container{
         display: flex;
@@ -125,6 +167,21 @@
       </form>
 
     <p class="img-container">Ofrecido por Google en: <a href="#">Español</a></p>
+    <div id="heading-container">
+        <div id="gmail">
+            Gmail
+        </div>
+        <div id="imagenes">
+            Imágenes
+        </div>
+        <div id="menu">
+            <i class="material-icons">apps</i>
+        </div>
+        <div id="profile">
+            L
+        </div>
+
+    </div>
     <div id="foot-container">
         <div id="mexico">México</div>
         <div id="sobre-google">Sobre Google</div>
