@@ -38,6 +38,14 @@
         text-align: center;
         padding: 1em;
     }
+    #searchbox{
+        display: flex;
+        width: 100%;
+        height: min-content;
+        justify-content: space-around;
+        padding: 1em;
+        flex-wrap: wrap;
+    }
 
     .img-container {
         display: flex;
@@ -49,12 +57,6 @@
         margin-left: auto;
         margin-right: auto;
         width: 50%;*/
-    }
-
-    #blank-space{
-        display: block;
-        width: 100%;
-        height: 30%;
     }
 
     #heading-container {
@@ -177,21 +179,29 @@
 </style>
 
 <body>
-    <div class="blank-space">
-        
-    </div>
 
     <div class="img-container">
         <img style="padding-top: 15%;" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
     </div>
 
-    <form class="img-container"  action="#">
-        <div class="searchbar" style="padding-right:50%; padding-left:50%; padding-bottom: 18px; padding-top: 18px; ">
-            <input type="text" size="67">
+    <!-- <div class="searchbox">
+        <i class="material-icons">search</i>
+        <div>
+
         </div>
-        <button type="submit">Buscar con Google</button>
-        <button type="submit">Me siento con suerte</button>
-    </form>
+        <i class="material-icons">close</i>
+
+    </div> -->
+    <div>
+        <form class="img-container"  action="#">
+            <div class="searchbar" style="padding-right:50%; padding-left:50%; padding-bottom: 18px; padding-top: 18px; ">
+                <input type="text" size="67">
+            </div>
+            <button type="submit">Buscar con Google</button>
+            <button type="submit">Me siento con suerte</button>
+        </form>
+    </div>
+    
 
     <p class="img-container">Ofrecido por Google en: <a href="#">Español</a></p>
     <div id="heading-container">
