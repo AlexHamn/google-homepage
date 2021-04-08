@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +11,12 @@
     <title>Google Homepage</title>
 </head>
 <style>
-    *{
+    * {
         color: rgb(60, 64, 67);
         font-family: Arial, Helvetica, sans-serif;
     }
-    [type='submit']{
+
+    [type='submit'] {
         background-color: #f8f9fa;
         border: 1px solid #f8f9fa;
         border-radius: 4px;
@@ -28,15 +29,17 @@
         min-width: 54px;
         text-align: center;
     }
-    #searchbar{
-            display: flex;
-            /* margin: 11px, 4px; */
-            width: 100%;
-            height:min-content%;
-            text-align: center;
-            padding: 1em;
-        }
-    .img-container{
+
+    #searchbar {
+        display: flex;
+        /* margin: 11px, 4px; */
+        width: 100%;
+        height: min-content%;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .img-container {
         display: flex;
         width: 100%;
         height: min-content;
@@ -47,48 +50,60 @@
         margin-right: auto;
         width: 50%;*/
     }
-    #heading-container{
+
+    #blank-space{
+        display: block;
+        width: 100%;
+        height: 30%;
+    }
+
+    #heading-container {
         display: flex;
         width: 98%;
-        justify-content:flex-end;
-        align-content:center;
-        position:fixed;
+        justify-content: flex-end;
+        align-content: center;
+        position: fixed;
         top: 0px;
     }
-    #gmail{
+
+    #gmail {
         width: min-content;
         height: min-content;
         text-align: center;
         padding: 1em;
     }
-    #imagenes{
+
+    #imagenes {
         width: min-content;
         height: min-content;
         text-align: center;
         padding: 1em;
     }
-    #menu{
+
+    #menu {
         width: min-content;
         height: min-content;
         text-align: center;
         padding: 1em;
     }
-    #profile{
+
+    #profile {
         width: 1em;
         height: 1em;
         padding: 1em;
         text-align: center;
         color: white;
-        background-color: rgb(120,144,156);
-        border-style:none;
+        background-color: rgb(120, 144, 156);
+        border-style: none;
         border-radius: 50%;
         align-self: center;
 
     }
-    #foot-container{
+
+    #foot-container {
         display: flex;
         background-color: rgb(218, 220, 224);
-        height:auto;
+        height: auto;
         flex-wrap: wrap;
         font-size: 15px;
         width: 100%;
@@ -98,73 +113,85 @@
         /*  
         justify-content: space-evenly;
         */
-        
-        }
-        #mexico{
-            width: 100%;
-            height: min-content;
-            text-align: start;
-            padding: 1em;
-            border-bottom: 5px;
-        }
-        #sobre-google{
-            width: min-content;
-            height:min-content%;
-            text-align: center;
-            white-space: nowrap;
-            padding: 1em;
-        }
-        #publicida{
-            width: min-content;
-            height:min-content%;
-            text-align: center;
-            padding: 1em;
-        }
-        #negocios{
-            width: min-content;
-            height:min-content%;
-            text-align: center;
-            padding: 1em;
-        }
-        #funcionalidad-busqueda{
-            width: min-content;
-            height:min-content%;
-            text-align: center;
-            white-space: nowrap;
-            padding: 1em;
-        }
-        #privacidad{
-            width: min-content;
-            height:min-content%;
-            text-align: center;
-            padding: 1em;
-        }
-        #condiciones{
-            width: min-content;
-            height:min-content%;
-            text-align: center;
-            padding: 1em;
-        }
-        #preferencias{
-            width: min-content;
-            height:min-content%;
-            text-align: center;
-            padding: 1em;
-        }
 
+    }
+
+    #mexico {
+        width: 100%;
+        height: min-content;
+        text-align: start;
+        padding: 1em;
+        border-bottom: 5px;
+    }
+
+    #sobre-google {
+        width: min-content;
+        height: min-content%;
+        text-align: center;
+        white-space: nowrap;
+        padding: 1em;
+    }
+
+    #publicida {
+        width: min-content;
+        height: min-content%;
+        text-align: center;
+        padding: 1em;
+    }
+
+    #negocios {
+        width: min-content;
+        height: min-content%;
+        text-align: center;
+        padding: 1em;
+    }
+
+    #funcionalidad-busqueda {
+        width: min-content;
+        height: min-content%;
+        text-align: center;
+        white-space: nowrap;
+        padding: 1em;
+    }
+
+    #privacidad {
+        width: min-content;
+        height: min-content%;
+        text-align: center;
+        padding: 1em;
+    }
+
+    #condiciones {
+        width: min-content;
+        height: min-content%;
+        text-align: center;
+        padding: 1em;
+    }
+
+    #preferencias {
+        width: min-content;
+        height: min-content%;
+        text-align: center;
+        padding: 1em;
+    }
 </style>
+
 <body>
-    <div class="img-container">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+    <div class="blank-space">
+        
     </div>
 
-    <form class="img-container" action="#">
-        <div class="searchbar">
+    <div class="img-container">
+        <img style="padding-top: 15%;" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+    </div>
+
+    <form class="img-container"  action="#">
+        <div class="searchbar" style="padding-right:50%; padding-left:50%; padding-bottom: 18px; padding-top: 18px; ">
             <input type="text" size="67">
         </div>
-            <button type="submit">Buscar con Google</button>
-            <button type="submit">Me siento con suerte</button>
-      </form>
+        <button type="submit">Buscar con Google</button>
+        <button type="submit">Me siento con suerte</button>
+    </form>
 
     <p class="img-container">Ofrecido por Google en: <a href="#">Español</a></p>
     <div id="heading-container">
@@ -193,4 +220,5 @@
         <div id="preferencias">Preferencias</div>
     </div>
 </body>
+
 </html>
